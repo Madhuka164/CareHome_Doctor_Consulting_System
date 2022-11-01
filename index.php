@@ -63,14 +63,6 @@ if (defined('ENVIRONMENT'))
  * APPLICATION FOLDER NAME
  *---------------------------------------------------------------
  *
- * If you want this front controller to use a different "application"
- * folder then the default one you can set its name here. The folder
- * can also be renamed or relocated anywhere on your server.  If
- * you do, use a full server path. For more info please see the user guide:
- * http://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- *
  */
 	$application_folder = 'application';
 
@@ -85,11 +77,7 @@ if (defined('ENVIRONMENT'))
  * WILL NOT set your routing here, but it's an option for those
  * special instances where you might want to override the standard
  * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT:  If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller.  Leave the function name blank if you need
- * to call functions dynamically via the URI.
+ 
  *
  * Un-comment the $routing array below to use this feature
  *
