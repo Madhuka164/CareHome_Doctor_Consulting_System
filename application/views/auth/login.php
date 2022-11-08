@@ -16,7 +16,7 @@
             ?>
         </title>
 
-        <!-- Bootstrap core CSS -->
+        <!-- Bootstrap  core CSS -->
         <link href="common/css/bootstrap.min.css" rel="stylesheet">
         <link href="common/css/bootstrap-reset.css" rel="stylesheet">
         <!--external css-->
@@ -30,34 +30,31 @@
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+
+        <style>
+            body{
+                background-image: url('images/LoginWall.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        </style>
     </head>
 
     <body class="login-body">
 
         <div class="container">
 
-            <style>
-
-
-                form{
-
-                    padding: 0px;
-                    border: none;
-
-
-                }
-
-
-            </style>
+         
 
             <form class="form-signin" method="post" action="auth/login">
                 <h2 class="login form-signin-heading">
+    
                     <?php
                     $this->db->where('hospital_id', 'superadmin');
                     echo $this->db->get('settings')->row()->title;
-                    ?>
+                    ?> 
                     <br/><br/>
-                    <img alt="" src="uploads/favicon.png">
+                    <img alt="" src="images/logoH.jpg.png" width="100px">
                 </h2>
                 <div id="infoMessage"><?php echo $message; ?></div>
                 <div class="login-wrap">
